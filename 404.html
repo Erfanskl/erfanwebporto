@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Erfan Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .error-hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: 6rem;
+      font-weight: 800;
+      color: var(--accent-emerald);
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+    }
+    .error-msg {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+    .error-sub {
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-hero">
+    <div class="error-code">404</div>
+    <div class="error-msg">Destination Not Found</div>
+    <p class="error-sub">
+      The requested route or resource does not exist on this server. It might have been moved or the URL was entered incorrectly.
+    </p>
+    <div class="error-actions">
+      <a href="index.html" class="btn-primary">
+        <i data-lucide="home" style="width: 18px; height: 18px;"></i>
+        <span>Return to Home</span>
+      </a>
+      <a href="academic/index.html" class="btn-secondary">
+        <i data-lucide="folder-git-2" style="width: 18px; height: 18px;"></i>
+        <span>Go to Coursework Repository</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof lucide !== "undefined" && lucide.createIcons) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
+
