@@ -43,6 +43,11 @@ const courseworkFolders = [
         id: "assignment-05",
         title: "Assignment 05",
         driveUrl: "https://drive.google.com/"
+      },
+      {
+        id: "uts",
+        title: "UTS",
+        driveUrl: "https://drive.google.com/drive/folders/1s9Cz7YX4GnB5y8BSA2MqLM38pl1_Q7gQ?usp=sharing"
       }
     ]
   }

@@ -151,5 +151,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // 8. Floating Coursework Popup for Lecturers
+  const courseworkPopup = document.getElementById("courseworkPopup");
+  const popupCloseBtn = document.getElementById("popupCloseBtn");
+
+  if (courseworkPopup) {
+    const isDismissed = sessionStorage.getItem("dismissedCourseworkNotice");
+    if (!isDismissed) {
+      setTimeout(() => {
+        courseworkPopup.classList.add("show");
+      }, 800);
+    }
+
+    if (popupCloseBtn) {
+      popupCloseBtn.addEventListener("click", () => {
+        courseworkPopup.classList.remove("show");
+        sessionStorage.setItem("dismissedCourseworkNotice", "true");
+      });
+    }
+  }
 });
 
